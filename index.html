@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta CEP</title>
+</head>
+
+<body>
+    <!-- w = width, mb = margin-bottom, p=padding -->
+    <div class="w-100 mb-3 p-3 bg-primary text-white">
+        <div class="container">
+            <h3 class="text-center">Consulta CEP</h3>
+        </div>
+    </div>
+    <div class="container container-fluid">
+        <div class="row">
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Informe seu CEP" id="inputZipCode" maxlength="8" autofocus>
+                <div class="input-group-append">
+                    <button class="btn btn-lg btn-warning" type="button" id="buttonFetch">Buscar</button>
+                </div>
+            </div><!-- input-group mb-3 --->
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text font-weight-bold">Logradouro:</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Logradouro" id="logradouro">
+            </div><!-- input-group mb-3 --->
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text font-weight-bold">Bairro:</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Bairro" id="bairro">
+            </div><!-- input-group mb-3 --->
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text font-weight-bold">Cidade:</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Cidade" id="cidade">
+            </div><!-- input-group mb-3 --->
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text font-weight-bold">Estado:</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Estado" id="estado">
+            </div><!-- input-group mb-3 --->
+
+            <div data-js="error-message" class="alert alert-danger w-100 text-center d-none" role="alert">
+                
+            </div>
+
+        </div><!-- row -->
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

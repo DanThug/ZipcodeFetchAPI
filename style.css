@@ -1,0 +1,10 @@
+.input-group-text {
+    min-width: 150px;
+}
+
+@media (max-width: 560px) {
+    .input-group-text {
+        min-width: 100px;
+        font-size: 13px;
+    }
+}
